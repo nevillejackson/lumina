@@ -80,7 +80,8 @@ QPlatformMenuBar *lthemeenginePlatformTheme::createPlatformMenuBar() const{
 QPlatformSystemTrayIcon *lthemeenginePlatformTheme::createPlatformSystemTrayIcon() const{
   if(m_checkDBusTray){
     QDBusMenuConnection conn;
-    m_dbusTrayAvailable = conn.isStatusNotifierHostRegistered();
+//    m_dbusTrayAvailable = conn.isStatusNotifierHostRegistered(); //
+    m_dbusTrayAvailable =  true;
     m_checkDBusTray = false;
     //qCDebug(llthemeengine) << "D-Bus system tray:" << (m_dbusTrayAvailable ? "yes" : "no");
     }
