@@ -141,7 +141,6 @@ make install
 ```
 It copies the binaries to `/usr/bin` .
 
-```
 
 #### Testing Lumina ####
 Now will the `lumina-desktop` binary run
@@ -151,7 +150,10 @@ I first rebooted and looked at the desktops available on the `slimski` Login Man
 So I disabled `slimski' and let antiX boot to a login console prompt. 
 Logged in a nevj and tried to start lumina
 
-..... luminanevj.png
+<p align="center">
+<img  src="https://github.com/nevillejackson/lumina/blob/master/build-info/luminanevj.png?raw=true">
+</p>
+
 
 It can not connect to the X server. The server does not seem to be running
 
@@ -163,7 +165,10 @@ start-lumina-desktop
 ```
 It now starts lumina
 
-.... lumina1.png
+<p align="center">
+<img  src="https://github.com/nevillejackson/lumina/blob/master/build-info/lumina1.png?raw=true">
+</p>
+
 
 and if I open a Roxterm and check, the X server (xorg) is now running. So the startup binary (start-lumina-desktop) must check if xorg is running and if not start it. 
 So the problem starting lumina as nevj may be a permissions issue?
@@ -173,15 +178,24 @@ Now , while it is not ideal running a DE as root, that proves that the compile o
 We might have a brief look at one of Lumina's  important features .... configuration. 
 There is an extensive config menu
 
-..... lumina2.png
-....  lumina3.png
+<p align="center">
+<img  src="https://github.com/nevillejackson/lumina/blob/master/build-info/lumina2.png?raw=true">
+</p>
+
+<p align="center">
+<img  src="https://github.com/nevillejackson/lumina/blob/master/build-info/lumina3.png?raw=true">
+</p>
+
 
 You can see the extensive set of config options tha took 2 screenshots to display.
 You can make it look like your favorite DE. There is even an icon to bring up the config menu. 
 
 The applications button in the lowe left corner brings this menu up
 
-.... lumina4.png
+<p align="center">
+<img  src="https://github.com/nevillejackson/lumina/blob/master/build-info/lumina4.png?raw=true">
+</p>
+
 
 and if you explore the submenus you find that it discovers and lists all the packages you have installed in antiX. So that menu looks just like you get with Xfce or IceWM.
 THe only thing I miss there is the workspaces.... I need to look into that. 
